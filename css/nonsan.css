@@ -1,0 +1,53 @@
+@charset "utf-8";
+@font-face {
+   font-family: 'KIMM_Bold';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+   font-weight: 700;
+   font-style: normal;
+}
+p,h4,li{font-family:'KIMM_Bold' ;}
+body{font-size: 15px;}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none; color: #6666;}
+ul,li,ol{list-style: none; margin: 0; padding: 0;}
+body{background-image:url(../img/body.jpg);background-repeat: no-repeat;background-size: cover;}
+
+#wrap{width: 1900px;margin:0 auto;}
+section{width: 92%;height: 1111px; display: flex;align-items: center;}
+.content{margin:0 auto;width: 59%; height: 738px;  }
+header{width: 8%; height: 100vh;background-color: brown; position: fixed; top: 0%;right: 0%;}
+/* head */
+li{margin: 20% 10%;}
+li img{width: 60px;}
+/* stage */
+#s1{}
+#s1>div:nth-child(1){width: 70%; height: 845px; background-image: url(../img/stage1.png) ; display: flex; align-items: center;justify-content: center;}
+#stagebox{width: 50%;height: 324px; margin-top:69px; background-color:  aqua;}
+/* program */
+#s2{ }
+#s2>div:nth-child(1){background-image: url(../img/Untitled-1.jpg); display: flex; flex-wrap: wrap; align-content:space-evenly;justify-content: space-evenly;}
+#program div { margin:2%; position: relative;}
+#program p {position: absolute; bottom:5%;left:25%; color: rgb(0, 0, 0);text-shadow: #fdfcfc;}
+/* course */
+#s3{ }
+#s3>div:nth-child(1){background-image: url(../img/Layer2.png); display: flex; align-items: center;justify-content: center;text-align: center;}
+#course>div { width: 29% ;padding: 2%;}
+#course p,h2{ padding: 8%;line-height: 30px; }
+#course img{ width: 95%;;border:solid 9px rgb(255, 255, 255);border-radius: 100%;}
+
+/* experience */
+#s4{}
+#s4>div:nth-child(1){background-color: aliceblue; display: flex; text-align: center;justify-content: space-evenly;align-items: center; }
+#experience p {font-size: 2em; padding: 10% 0;}
+
+#experience img {width: 75%;}
+
+/* notice */
+.post {width:39%; height: 40%; background-image: url(../img/Postit.png); background-repeat:no-repeat; background-position: center; }
+#notice{display: flex;flex-wrap: wrap; align-content: center; justify-content: center; }
+#s5{}
+#s5>div:nth-child(1){background-image: url(../img/frame-with-leaves-beside.png);}
+/* map */
+#s6{}
+#s6>div:nth-child(1){background-image: url(../img/map.png); border-radius: 5%;}
