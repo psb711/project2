@@ -5,18 +5,24 @@
    font-weight: 700;
    font-style: normal;
 }
+@font-face {
+   font-family: 'HakgyoansimDoldamB';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimDoldamB.woff2') format('woff2');
+   font-weight: 700;
+   font-style: normal;
+}
 p,h4,li{font-family:'KIMM_Bold' ;}
 body{font-size: 15px;}
 
-* {margin: 0; padding: 0; box-sizing: border-box; background-repeat: no-repeat; background-size: contain; background-position: centers;}
-a{text-decoration: none; color: #6666;}
+* {margin: 0; padding: 0; box-sizing: border-box; background-repeat: no-repeat; background-size: contain; background-position: center;}
+a{text-decoration: none; color: #666;}
 ul,li,ol{list-style: none; margin: 0; padding: 0;}
-body{background-image:url(../img/body.jpg);background-repeat: no-repeat;background-size: cover; background-position: center;}
+body{background-image:url(../img/body.jpg);background-repeat: no-repeat;background-size: cover;}
 
 #wrap{width:100%;margin:0 auto; overflow: hidden;}
 section{width: 92%;height: 57.8vw; display: flex;align-items: center;}
 .content{margin:0 auto;width: 57%; height: 66%;  }
-header{width: 8%; height: 100vh;background-color: brown; position: fixed; top: 0%;right: 0%;}
+header{width: 8%; height: 100vh; position: fixed; top: 0%;right: 0%;}
 /* all menu */
 
 #allmenu {
@@ -27,7 +33,7 @@ header{width: 8%; height: 100vh;background-color: brown; position: fixed; top: 0
    width: 100vw;
    height: 100vh;
    z-index: 10;
-   background-color: rgb(195, 238, 184);
+   background-color:#8cc759;
    margin: 0 auto;
    display: none;
 }
@@ -44,23 +50,34 @@ header{width: 8%; height: 100vh;background-color: brown; position: fixed; top: 0
    
    line-height: 20px;
    height: 20px;
-ma
+
 }
 .menu>li>a{font-size: 1.8em;}
+.sub li{margin:5% 0;}
 
 #allmenuhead {
    margin: 10%;
 }
-
-#close {
-   float: right;
-   margin-right: 10%;
-   margin-top: 5%;
+#close{  
+   width: 100%;float: right;
+   margin-right: 5%;
+   margin-top: 5%; }
+#close button {
+ width: 100%;
+   border: none;
+   background-color:transparent ;
 }
+#close>button>img {width: 7%;float: right;
+   margin-right: 0%;
+   margin-top: 0%;}
 
+ 
+#search1{width: 50%;padding: 18px;border-radius: 15px; text-align: center;border: 2px solid;color: #eeb6b6; outline: none;    margin: 0 -10% 0 0; }
+
+.SearchBtn{margin:0 5%; vertical-align:middle;border: none;  background-color:transparent ;}
 /* head */
 nav li{margin: 20% 10%;}
-nav img{width: 60px;}
+.hamburger{width: 60px;}
 /* stage */
 #s1 {
    position: relative;
@@ -86,12 +103,12 @@ img[alt="logo"] {
 }
 
 #stagebox {
-   width: 46%;
-   height: 34%;
+   width: 65%;
+   height: 36%;
    background-color: aqua;
    position: absolute;
   bottom: 5px;
-  top: 50%;
+  top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
 ;}
@@ -102,19 +119,22 @@ img[alt="berry"] {
 }
 
 #stagebox img:nth-child(2) {
-   bottom: 1%;
+   bottom: 1.5%;
    left: -8%;
 }
 
 #stagebox img:nth-child(3) {
-   bottom: 1%;
+   bottom: 1.5%;
    right: -8%;
 }
-
+#video{    width: 100%;
+   height: 100%;
+}
+#stagebox iframe {width: 100%; height: 100%;}
 /* program */
 #s2{position: relative;}
 img[alt="stone"] { position: absolute; bottom: 10%; right: 150px;}
-img[alt="Nonsansayinghello"] {position: absolute; width: 27%; bottom: -6%; left: 0%;}
+img[alt="Nonsansayinghello"] {position: absolute; width: 24%; bottom: 4%; left: 3%;}
 #s2>div:nth-child(1){background-image: url(../img/Untitled-1.jpg); display: flex; flex-wrap: wrap; align-content:space-evenly;justify-content: space-evenly;}
 #program>div {width: 29%;
    margin: -1%; padding: 2%; text-align: center;
@@ -225,27 +245,76 @@ img[alt="Non-sandrinkingjuice"] {width: 26%;  position: absolute; bottom: 15%; l
 }
 
 /* notice */
-#s5{position: relative;}
-#s5>img{position: absolute;}
-#s5>img:nth-of-type(1){width: 10%; top: 8%; right:15%}
-#s5>img:nth-of-type(2){width: 7%;top: 10%; left: 10%;}
-#s5>img:nth-of-type(3){width: 9%;bottom: -2%;left: 8%;}
-img[alt="CAKE"] {width: 23%; bottom: 2%; right:10% ;position: absolute;}
- #notice{background-size: covers;width: 59%;}
+#s5 {
+   position: relative;
+}
 
-.post {width:39%; height: 35%; background-image: url(../img/Postit.png);  background-position: center; }
-#notice{display: flex;flex-wrap: wrap; align-content: center; justify-content: center; }
-#s5>div:nth-child(1){background-image: url(../img/frame-with-leaves-beside.png);}
+#s5>img {
+   position: absolute;
+}
+
+#s5>img:nth-of-type(1) {
+   width: 10%;
+   top: 8%;
+   right: 15%
+}
+
+#s5>img:nth-of-type(2) {
+   width: 7%;
+   top: 10%;
+   left: 10%;
+}
+
+#s5>img:nth-of-type(3) {
+   width: 9%;
+   bottom: -2%;
+   left: 8%;
+}
+
+img[alt="CAKE"] {
+   width: 21%;
+   bottom: 3%;
+   right: 10%;
+   position: absolute;
+}
+
+#notice {
+   background-size: covers;
+   width: 59%;
+}
+
+.post {
+   width: 40%;
+   height: 42%;
+   background-image: url(../img/Postit.png);
+   background-position: center;
+   text-align: center;
+
+}
+
+.post h3{font-size: 1.2rem; padding: 12% 0 8% 0; font-family: 'HakgyoansimDoldamB';}
+.post p {font-size: 1.05rem; margin:  0 15% ; line-height: 160%; font-family: 'HakgyoansimDoldamB';}
+.post img {margin: -7%; width: 47%;}
+#notice {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+}
+
+#s5>div:nth-child(1) {
+   background-image: url(../img/frame-with-leaves-beside.png);
+}
 /* map */
 #s6{ position: relative;}
-#s6>img{position: absolute;width: 20%; top: 5%;}
-#map img{width:100% ;height: 100%; border-radius: 5%; text-align: center;}
+#s6>img{position: absolute;width: 20%; top: 19%;}
+#map img{width:100% ; height: 80%; border-radius: 10%; text-align: center;}
     .zoom-container {
       position: relative;
       width: 100%;
       margin: 50px auto;
       cursor: none;
-    }
+    }s
    
     .zoom-container img {
       width: 100%;
@@ -273,8 +342,9 @@ img[alt="CAKE"] {width: 23%; bottom: 2%; right:10% ;position: absolute;}
       
     }
 /* footer */
-footer{width: 100%; text-align: center;height: 12vw; background-color: aqua;}
-.footerul{display: flex; justify-items: center;  gap: 20px;justify-content: space-evenly;}
+footer{width: 100%; text-align: center;height: 10vw; padding: 10%;}
+footer p {color: #858484;}
+.footerul{display: flex; justify-items: flex-end; justify-content: space-evenly; margin:3% 30%;}
 /* animation */
 @keyframes carMove {
    0% {
