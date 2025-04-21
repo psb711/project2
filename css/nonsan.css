@@ -11,6 +11,15 @@
    font-weight: 700;
    font-style: normal;
 }
+
+
+@media (max-width:600px) {}
+
+
+@media (min-width:600px)and (max-width:1361px) {}
+
+@media (min-width:1361px) {}
+
 p,h4,li{font-family:'KIMM_Bold' ;}
 body{font-size: 15px;}
 
@@ -96,6 +105,7 @@ img[alt="logo"] {
    display: flex;
    align-items: flex-start;
    justify-content: space-between;
+   z-index: -3;
 }
 
 #s1>div {
@@ -111,6 +121,7 @@ img[alt="logo"] {
   top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 ;}
 
 img[alt="berry"] {
@@ -119,13 +130,21 @@ img[alt="berry"] {
 }
 
 #stagebox img:nth-child(2) {
-   bottom: 1.5%;
-   left: -8%;
+   bottom: -1%;
+   left: -2%;
 }
 
 #stagebox img:nth-child(3) {
-   bottom: 1.5%;
-   right: -8%;
+   bottom: -1%;
+   right: -2%;
+}
+/* #stagebox img:nth-child(4) { */
+#s1 >img:nth-of-type(2){
+   position: absolute;
+   width: 40%;
+   top: -8%;
+   right: -5%;
+   z-index: -4;
 }
 #video{    width: 100%;
    height: 100%;
@@ -133,8 +152,10 @@ img[alt="berry"] {
 #stagebox iframe {width: 100%; height: 100%;}
 /* program */
 #s2{position: relative;}
-img[alt="stone"] { position: absolute; bottom: 10%; right: 150px;}
+img[alt="stone"] { position: absolute; width: 17%; bottom: 10%; right: 150px;}
 img[alt="Nonsansayinghello"] {position: absolute; width: 24%; bottom: 4%; left: 3%;}
+img[alt="tree"] {position: absolute; width: 30%; bottom: 12%; right:-1%; z-index: -4;}
+img[alt="sprouts"] {position: absolute; width: 19%; top: -5%; left:3%; z-index: -4;}
 #s2>div:nth-child(1){background-image: url(../img/Untitled-1.jpg); display: flex; flex-wrap: wrap; align-content:space-evenly;justify-content: space-evenly;}
 #program>div {width: 29%;
    margin: -1%; padding: 2%; text-align: center;
@@ -144,8 +165,8 @@ img[alt="Nonsansayinghello"] {position: absolute; width: 24%; bottom: 4%; left: 
 #program div img:hover{cursor: pointer;animation:program 1s }
 #program p { 
  
-   color: rgb(243, 243, 243);
-   -webkit-text-stroke: 0.9px rgb(207, 122, 122);
+   color: rgb(2, 2, 2);
+   -webkit-text-stroke: 0.9px rgb(221, 166, 166);
 font-size: 1.5rem;
 margin: 5% -5%;
 }
@@ -203,8 +224,8 @@ img[alt="berrycar"] { position: absolute; width: 20%; bottom: 5%; right: -25%; o
 }
  
 /* experience */
-#s4{position: relative;}
-img[alt="Non-sandrinkingjuice"] {width: 26%;  position: absolute; bottom: 15%; left: 2%; }
+#s4{position: relative; }
+
 #s4>div:nth-child(1){background-color: rgb(221, 229, 236); display: flex; text-align: center;justify-content: space-evenly;align-items: center;border-radius: 40px  ;}
 #experience p {font-size: 1.7em; padding: 10% 0;}
 #experience img {
@@ -243,6 +264,11 @@ img[alt="Non-sandrinkingjuice"] {width: 26%;  position: absolute; bottom: 15%; l
    opacity: 1;
    transform: translateY(5px);
 }
+img[alt="Non-sandrinkingjuice"] {width: 26%;  position: absolute; bottom: 10%; left: 2%;z-index: 20; }
+img[alt="flower1"]{position:absolute;bottom:15%;width: 20%; right: 3%;}
+img[alt="tree1"]{position:absolute;top:-50%;width: 35%; left: -15%;}
+img[alt="stone1"]{position:absolute;top:11%;width: 20%; left: 0%;z-index: 15;}
+img[alt="stone2"]{position:absolute;bottom:17%;width: 10%; right: 0%;}
 
 /* notice */
 #s5 {
@@ -270,6 +296,12 @@ img[alt="Non-sandrinkingjuice"] {width: 26%;  position: absolute; bottom: 15%; l
    bottom: -2%;
    left: 8%;
 }
+#s5>img:nth-of-type(4) {
+   width: 8%;
+   bottom: 30%;
+   right: -1%;
+   z-index: -4;
+}
 
 img[alt="CAKE"] {
    width: 21%;
@@ -293,7 +325,7 @@ img[alt="CAKE"] {
 }
 
 .post h3{font-size: 1.2rem; padding: 12% 0 8% 0; font-family: 'HakgyoansimDoldamB';}
-.post p {font-size: 1.05rem; margin:  0 15% ; line-height: 160%; font-family: 'HakgyoansimDoldamB';}
+.post p {font-size: 1.05rem; margin:  0 15% ; line-height: 145%; font-family: 'HakgyoansimDoldamB';}
 .post img {margin: -7%; width: 47%;}
 #notice {
    display: flex;
@@ -307,7 +339,7 @@ img[alt="CAKE"] {
 }
 /* map */
 #s6{ position: relative;}
-#s6>img{position: absolute;width: 20%; top: 19%;}
+
 #map img{width:100% ; height: 80%; border-radius: 10%; text-align: center;}
     .zoom-container {
       position: relative;
@@ -341,8 +373,15 @@ img[alt="CAKE"] {
       height: auto;
       
     }
+    img[alt="stone3"]{position:absolute;bottom:-10%;width: 15%; left: 11%;}
+    
+    img[alt="sprouts1"]{position:absolute;top: -7%;left: 18%; width: 28%;}
+    
+    img[alt="treeandflowers"]{position:absolute;bottom:-5%;width: 25%; right: 0%;}
+    img[alt="Nongsanisholdingstrawberries"]{position: absolute;width: 25%; top: 5%;}
+
 /* footer */
-footer{width: 100%; text-align: center;height: 10vw; padding: 10%;}
+footer{width: 100%; text-align: center;height: 10vw; padding: 10%;margin-bottom: 10%;}
 footer p {color: #858484;}
 .footerul{display: flex; justify-items: flex-end; justify-content: space-evenly; margin:3% 30%;}
 /* animation */
