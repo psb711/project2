@@ -4,12 +4,21 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-swidth, initial-scale=1.0">
-   <title>Document</title>
+   <title>nonsanfestival</title>
    <link rel="stylesheet" href="./css/nonsan.css">
    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
    <script src="./nonsan.js"> </script>
-
-
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   
+      <style>
+         .material-symbols-outlined {
+           font-variation-settings:
+           'FILL' 0,
+           'wght' 400,
+           'GRAD' 0,
+           'opsz' 24
+         }
+         </style>
 </head>
 
 <body>
@@ -22,7 +31,7 @@
                <form action="" id="totalSearchFrm" name="totalSearchFrm" method="get">
                   <input type="text" placeholder="검색어를 입력해 주세요" name="totalSearchText" id="search1">
                   <button type="submit" class="SearchBtn">
-                     <svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 512 512" fill="#eeb6b6">
+                     <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512" fill="#eeb6b6">
                         <path
                            d="M368 208A160 160 0 1 0 48 208a160 160 0 1 0 320 0zM337.1 371.1C301.7 399.2 256.8 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 48.8-16.8 93.7-44.9 129.1L505 471c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L337.1 371.1z">
                         </path>
@@ -33,37 +42,36 @@
 
          </div>
          <ul class="menu">
-            <li><a href="">축제소개</a>
+            <li><a href="#">축제소개</a>
                <ul class="sub">
                   <li><a href="">논산딸기의 유래</a></li>
                   <li><a href="">인사말</a></li>
                </ul>
             </li>
-            <li><a href="">축제정보</a>
+            <li><a href="#">축제정보</a>
                <ul class="sub">
-                  <li><a href="">축제개요</a></li>
+                  
                   <li><a href="">축제일정표</a></li>
                   <li><a href="">프로그램</a></li>
                   <li><a href="">축제장 안내</a></li>
-                  <li><a href="">교통편 안내</a></li>
                   <li><a href="">추천코스</a></li>
                </ul>
             </li>
-            <li><a href="">체험 프로그램</a>
+            <li><a href="#">체험 프로그램</a>
                <ul class="sub">
                   <li><a href="">딸기수확체험</a></li>
                   <li><a href="">헬기탑승체험</a></li>
                   <li><a href="">주요이벤트</a></li>
                </ul>
             </li>
-            <li><a href="">알림마당</a>
+            <li><a href="#">알림마당</a>
                <ul class="sub">
                   <li><a href="">공지사항</a></li>
                   <li><a href="">보도자료</a></li>
                   <li><a href="">축제자료</a></li>
                </ul>
             </li>
-            <li><a href="">논산 딸기사전</a>
+            <li><a href="#">논산 딸기사전</a>
                <ul class="sub">
                   <li><a href="">논산딸기는</a></li>
                   <li><a href="">딸기요리 레시피</a></li>
@@ -75,29 +83,39 @@
       <header>
 
          <nav>
-            <ul>
+            <ul class="menuboard">
                <li><img src="./img/menu.png" alt="hamburger" class="hamburger"></li>
-               <li><a href="#s2">프로그램
-
-               </a></li>
-               <li><a href="#s3">추천코스
-
-               </a></li>
-               <li><a href="#s4">체험신청
-
-               </a></li>
-               <li><a href="#s5">알림마당
-
-               </a></li>
-               <li><a href="#s6">축제지도
-
-               </a></li>
-               <li><a href="#s1">위로가기
+               <li><a href="#s2">
                   <span class="material-symbols-outlined">
-                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=stat_3" />
-                     stat_3
-                     </span>
-               </a></li>
+                     interests
+                     </span>프로그램
+                  </a></li>
+               <li><a href="#s3">
+                     <span class="material-symbols-outlined">
+                        footprint
+
+                     </span>추천코스
+                  </a></li>
+               <li><a href="#s4">
+                  <span class="material-symbols-outlined">
+                     list_alt_check
+                     </span>체험신청
+                  </a></li>
+               <li><a href="#s5">
+                  <span class="material-symbols-outlined">
+                     event
+                     </span>알림마당
+                  </a></li>
+               <li><a href="#s6">
+                     <span class="material-symbols-outlined">
+
+                        map</span>축제지도
+                  </a></li>
+               <li><a href="#s1">
+                  <span class="material-symbols-outlined">
+                     arrow_warm_up
+                     </span>위로가기
+                  </a></li>
             </ul>
          </nav>
       </header>

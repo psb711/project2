@@ -19,21 +19,26 @@
    font-weight: normal;
    font-style: normal;
 }
+@font-face {
+   font-family: 'PurenJeonnam';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/PureunJeonnam.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
 
-
-@media (max-width:800px) {
+@media (max-width:799px) {
    section {
       width: 100%;
-      height: 90vw;
       display: flex;
       align-items: center;
 
    }
-
+ 
+section:not(:first-child){  height: 140vw;}
    .content {
       margin: 0 auto;
       width: 70%;
-      height: 80%;
+      height: 76%;
    }
    /* 헤더 */
    .hamburger {
@@ -41,23 +46,78 @@
    }
    header {
       width: 100%;
-      height: 40px;
+      height: 60px;
       top: 0;
       position: fixed;
      
       }
       header ul{display: flex; justify-content: space-evenly; align-items: center;padding: 10px 0;}
-      header li{ width: 10%;}
-      /* 스테이지 */
-      #s1 {
-        margin-top: 60px;
-      }
+      header li{ width: 13%;}
+      .menuboard a{font-size: 50% ; font-family: 'PurenJeonnam';}
+      .menuboard span{display: block;
+         font-size: 400%;}
 
+/* 올메뉴 */
+.SearchBtn {display: none;}
+#search1 {
+   margin: 0 0 0 0;
+}
+.menu {
+
+   width: 100%;
+   justify-content: flex-end;
+
+   display: flex
+;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 50px;
+}
+
+
+.menu>li {
+   width: 35%;
+
+   line-height: 25px;
+padding: 5% 0;
+
+}
+.menu > li::after {
+   content: '▾'; /* 혹은 ▼, ⌄ 등 */
+   font-size: 30px;
+   margin-bottom: 100px;
+color: #eeb6b6;
+ }
+
+.menu>li>a {
+   font-size: 1.4em;
+   width: 100%;
+   padding: 0 0px;
+}
+.sub{display: none;}
+      /* 스테이지 */
+   
+      #s1 {
+  
+         margin-bottom: -31%;
+
+      
+     }
+     #stagebox {
+      width: 65%;
+      height: 13%;
+      background-color: aqua;
+      position: absolute;
+      bottom: 5px;
+      top: 51%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
       /* 프로그램 */
       #program>div {
-         width: 50%;
+         width: 60%;
          margin: -8%;
-         padding: 10%;
+         padding: 8%;
         font-size: 0.77em;
       
       }
@@ -65,8 +125,8 @@
 
          color: rgb(2, 2, 2);
         
-         font-size: 1rem;
-         margin: 5% -7%;
+         font-size: 0.8rem;
+         margin: 1% -7%;
       }
       
       img[alt="Nonsansayinghello"] {
@@ -75,12 +135,54 @@
          bottom: 4%;
          left: 3%;
       }
+
       /* 코스 */
+      #course {
+         display: flex;
+         justify-content: space-between;
+      
+         
+         flex-direction: column;
+         flex-wrap: nowrap;
+      }
+      #s3>div:nth-child(1) {align-items: center;
+      }
+      #course>div {
+         width: 50%;
+         padding: 1%;
+     }
+     .txtbox1 {
+      font-size: 0.8em;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+   opacity: 0;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      transition: all 0.4s ease;
+      text-shadow: 1px 1px 5px rgb(243, 243, 243);
+      line-height: 25px;
+   
+  }
+      
       /* 체험 */
       #experience p {
          font-size: 1em;
          padding: 5% 0;
       }
+      #experience img {
+         width: 32%;
+         padding: 7% 0;
+      
+      }
+      #s4>div:nth-child(1) {
+        
+         display: flex
+     ;
+         flex-direction: column;
+         justify-content: center;
+     }
       img[alt="Non-sandrinkingjuice"] {
          width: 26%;
          position: absolute;
@@ -131,28 +233,55 @@ align-items: center;
 
 .post {
    width: 250px;
-   height: 73px;
-   background-image: url(../img/Postit.png);
-   background-position: center;
-   margin: 7px;
-   background-size: cover;
 
+   background-image: url(../img/Postit1.png);
+
+   margin: 7px;
+  
+   
+        
+          background-position: top;
+  
+          background-size: 105% auto;
+      }
+
+
+.post img {
+   margin: 0%;
+   width: 50%;
 }
+.post h3 {
+   font-size: 0.9rem;
+   padding: 12% 0 8% 0;
+   font-family: 'KIMM_Bold';
+}
+.post p {
+   font-size: 0.9rem;
+   margin: 0 0 14% 0%;
+   line-height: 145%;
+   font-family:'SUIT-Regular';
+}
+.post div{margin-bottom: 5%;}
+.post p,.post div{display: none;}
+/* 지도 */
+#s6{margin-bottom: -15%;}
 /* 푸터 */
+
 footer {
    width: 100%;
    text-align: center;
-   height: 20%;
+
    padding: 0%;
    margin-bottom: 15%;
-   margin-top: 30%;
+
    font-size: 0.8em;
 }
+.footerul li {margin: 5%}
+
 
 }
 
-
-@media (min-width:800px)and (max-width:1361px) {
+@media (min-width:800px) and (max-width:1361px) {
    section {
       width: 100%;
       height: 70vw;
@@ -170,7 +299,7 @@ footer {
       width: 60%;
    }
    header {
-      width: 8%;
+      width: 10%;
       height: 100vh;
   
       top: 0%;
@@ -178,9 +307,60 @@ footer {
       position: fixed;
    }
    nav li {
-      margin: 20% 10%;
+      margin: 20% 10%; text-align: center;
    }
-   /* 프로그램 */
+   .menuboard a{font-size: 100%}
+   .menuboard span{display: block;
+      font-size: 200%;}
+   /* 올메뉴 */
+   #search1 {
+   
+      margin: 0 -10% 0 0;
+  }
+   .menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   
+   }
+   
+   .menu>li {
+      width: 15%;
+   
+      line-height: 20px;
+      height: 20px;
+   
+   }
+   .menu > li::after {
+      display: none;
+    }
+   
+   .menu>li>a {
+      font-size: 1.5em;
+   }
+   .sub li {
+      margin: 5% 3%;
+   }
+   .sub a{ margin:-47% ;}
+   .menu a{margin:-47%}
+   #allmenuhead {
+      margin: 10%;
+   }
+   .sub{display: block;}
+   /* 스테이지 */
+   #stagebox {
+      width: 65%;
+      height: 36%;
+      background-color: aqua;
+      position: absolute;
+      bottom: 5px;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   
+      
+   }
+      /* 프로그램 */
    #program>div {
       width: 29%;
       margin: -1%;
@@ -202,10 +382,61 @@ footer {
       left: -3%;
    }
    /* 코스 */
+   #course {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex-direction: row;
+    padding: 2%;
+   
+   }
+   #course>div {
+   
+      margin-top: 13%;
+   }
+   #s3>div:nth-child(1) {align-items: flex-start;
+   }
+   #course h2 {
+  
+      line-height: 30px;
+  
+   }
+   #course>div {
+      width: 30%;
+      padding: 1%;
+   
+   }
+   
+   .txtbox1 {
+      font-size: 1rem;
+      width: 100%;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      opacity: 0;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      transition: all 0.4s ease;
+      text-shadow: 1px 1px 5px rgb(243, 243, 243);
+      line-height: 25px;
+      padding: 4px;
+   }
    /* 체험 */
+   #s4>div:nth-child(1) {
+     
+      display: flex;
+     flex-direction: row;
+      justify-content: space-evenly;
+     
+   }
+   
    #experience p {
       font-size: 1.5em;
       padding: 10% 0;
+   }
+   #experience img {
+      width: 71%;
+   
    }
    img[alt="Non-sandrinkingjuice"] {
       width: 25%;
@@ -258,6 +489,23 @@ footer {
       text-align: center;
    
    }
+   .post img {
+      margin: -7%;
+      width: 47%;
+   }
+   .post h3 {
+      font-size: 0.9rem;
+      padding: 12% 0 11% 0;
+      font-family: 'KIMM_Bold';
+   }
+   
+   .post p {
+      font-size: 1rem;
+      margin: 0px 5% 5% 4%;
+      line-height: 145%;
+      font-family:'SUIT-Regular';
+   }
+   .post p,.post div{display: block;}
    /* 푸터 */
    footer {
       width: 100%;
@@ -265,6 +513,12 @@ footer {
       height: 10vw;
       padding: 10%;
       margin-bottom: 10%;
+   }
+   .footerul {
+      display: flex;
+      justify-items: flex-end;
+      justify-content: space-evenly;
+
    }
 }
 
@@ -294,7 +548,50 @@ footer {
       position: fixed;
    }
    nav li {
-      margin: 20% 10%;
+      margin: 20% 10%; ;
+   }
+   .menuboard a{font-size: 100%}
+   .menuboard span{vertical-align: middle; margin: 0 5px 0 0;}
+   
+   /* 올메뉴 */
+   #search1 {
+   
+      margin: 0 -10% 0 0;
+  }
+   .menu {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+   
+   }
+   
+   .menu>li {
+      width: 10%;
+   
+      line-height: 20px;
+      height: 20px;
+   
+   }
+   .menu > li::after {
+      display: none;
+    }
+   .menu>li>a {
+      font-size: 1.6em;
+     
+   }
+   .sub{display: block;}
+   /* 스테이지 */
+   #stagebox {
+      width: 65%;
+      height: 36%;
+      background-color: aqua;
+      position: absolute;
+      bottom: 5px;
+      top: 53%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   
+      
    }
    /* 프로그램 */
    #program>div {
@@ -304,6 +601,15 @@ footer {
 
    
    }
+   .sub li {
+      margin: 5% 3%;
+   }
+   .sub a{ margin:-47% ;}
+   .menu a{margin:-47%}
+   #allmenuhead {
+      margin: 10%;
+   }
+   
    #program p {
 
       color: rgb(2, 2, 2);
@@ -318,10 +624,66 @@ footer {
       left: 3%;
    }
    /* 코스 */
+   #course {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 2%;
+      flex-direction: row;
+   }
+   #s3>div:nth-child(1) {align-items: flex-start;
+   }
+   #course>div {
+    
+      margin-top: 13%;
+   }
+   #course h2 {
+     
+      line-height: 30px;
+    
+   }
+   #course>div {
+      width: 30%;
+      padding: 1%;
+   
+   }
+   
+   .txtbox1 {
+      font-size: 1rem;
+      width: 100%;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      opacity: 0;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      transition: all 0.4s ease;
+      text-shadow: 1px 1px 5px rgb(243, 243, 243);
+      line-height: 25px;
+      padding: 4px;
+   }
    /* 체험 */
+   #s4>div:nth-child(1) {
+      
+      display: flex;
+
+      justify-content: space-evenly;
+     
+        
+   
+     ;
+         flex-direction: row;
+  
+     
+   }
+   
    #experience p {
       font-size: 1.7em;
       padding: 10% 0;
+   }
+   #experience img {
+      width: 71%;
+     
    }
    img[alt="Non-sandrinkingjuice"] {
       width: 26%;
@@ -367,13 +729,29 @@ footer {
       justify-content: center;
    }
    .post {
-      width: 40%;
-      height: 42%;
+      width: 34%;
+      height: 41%;
       background-image: url(../img/Postit.png);
       background-position: center;
       text-align: center;
    
    }
+   .post img {
+      margin: -7%;
+      width: 47%;
+   }
+   .post h3 {
+      font-size: 0.9rem;
+      padding: 12% 0 13% 0;
+      font-family: 'KIMM_Bold';
+   }
+   .post p {
+      font-size: 1.1rem;
+      margin: 0 0%;
+      line-height: 145%;
+      font-family:'SUIT-Regular';
+   }
+   .post p,.post div{display: block;}
    /* 푸터 */
    footer {
       width: 100%;
@@ -381,6 +759,12 @@ footer {
       height: 10vw;
       padding: 10%;
       margin-bottom: 10%;
+   }
+   .footerul {
+      display: flex;
+      justify-items: flex-end;
+      justify-content: space-evenly;
+     
    }
 }
 
@@ -402,7 +786,7 @@ body {
    background-size: contain;
    background-position: center;
 }
-
+*:not(#s1 .content){  background-position: center;}
 a {
    text-decoration: none;
    color: #666;
@@ -428,8 +812,6 @@ body {
    overflow: hidden;
 }
 
-/* section{width: 92%;height: 57.8vw; display: flex;align-items: center;} */
-/* .content{margin:0 auto;width: 57%; height: 66%;  } */
 header {
 
 
@@ -437,6 +819,8 @@ header {
    backdrop-filter:blur(4px);
    z-index: 5;
 }
+ul a{color: rgb(255, 255, 255);}
+
 
 /* all menu */
 
@@ -447,37 +831,10 @@ header {
    left: 0;
    width: 100vw;
    height: 100vh;
-   z-index: 10;
+   z-index: 40;
    background-color: #8cc759;
    margin: 0 auto;
    display: none;
-}
-
-.menu {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-
-}
-
-.menu>li {
-   width: 10%;
-
-   line-height: 20px;
-   height: 20px;
-
-}
-
-.menu>li>a {
-   font-size: 1.8em;
-}
-
-.sub li {
-   margin: 5% 0;
-}
-
-#allmenuhead {
-   margin: 10%;
 }
 
 #close {
@@ -509,7 +866,7 @@ header {
    border: 2px solid;
    color: #eeb6b6;
    outline: none;
-   margin: 0 -10% 0 0;
+  
 }
 
 .SearchBtn {
@@ -540,25 +897,14 @@ img[alt="logo"] {
    display: flex;
    align-items: flex-start;
    justify-content: space-between;
-   z-index: -3;
+   z-index: 1;
 }
 
 #s1>div {
    position: relative;
 }
 
-#stagebox {
-   width: 65%;
-   height: 36%;
-   background-color: aqua;
-   position: absolute;
-   bottom: 5px;
-   top: 53%;
-   left: 50%;
-   transform: translate(-50%, -50%);
 
-   ;
-}
 
 img[alt="berry"] {
    width: 10%;
@@ -639,7 +985,7 @@ img[alt="sprouts"] {
 }
 
 #program div img {
-   width: 80%;
+   width: 90%;
    border-radius: 50%;
 }
 
@@ -655,12 +1001,7 @@ html {
 }
 
 /* course */
-#course {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   padding: 2%;
-}
+
 
 #s3 {
    position: relative;
@@ -678,20 +1019,15 @@ img[alt="berrycar"] {
 #s3>div:nth-child(1) {
    background-image: url(../img/Layer2.png);
    display: flex;
-   align-items: flex-start;
+ 
    justify-content: center;
    text-align: center;
+
 }
 
-#course>div {
-   width: 30%;
-   padding: 1%;
-   margin-top: 13%;
-}
 
 #course h2 {
    padding: 0%;
-   line-height: 30px;
    font-size: 1rem;
 }
 
@@ -700,25 +1036,8 @@ img[alt="berrycar"] {
    overflow: hidden;
 }
 
-.txtbox1 {
-   font-size: 1rem;
-   width: 100%;
-   position: absolute;
-   top: 90px;
-   left: 0;
-   opacity: 0;
-   color: rgb(0, 0, 0);
-   font-weight: bold;
-   transition: all 0.4s ease;
-   text-shadow: 1px 1px 5px rgb(243, 243, 243);
-   line-height: 25px;
-   padding: 4px;
-}
-
 #course img {
    width: 100%;
-   ;
-
    border-radius: 100%;
    margin: 0 -10px;
    transition: opacity 0.4s ease;
@@ -745,9 +1064,9 @@ h2:hover {
 
 #s4>div:nth-child(1) {
    background-color: rgb(221, 229, 236);
-   display: flex;
+
    text-align: center;
-   justify-content: space-evenly;
+ 
    align-items: center;
    border-radius: 40px;
 }
@@ -755,7 +1074,6 @@ h2:hover {
 
 
 #experience img {
-   width: 71%;
    transition: transform 0.3s ease;
    -webkit-font-smoothing: antialiased;
    -webkit-transform: translateZ(0);
@@ -839,29 +1157,17 @@ img[alt="CAKE"] {
 }
 
 #notice {
-   background-size: covers;
-   width: 59%;
+   background-size: cover;
+
 }
 
 
 
-.post h3 {
-   font-size: 0.9rem;
-   padding: 12% 0 8% 0;
-   font-family: 'KIMM_Bold';
-}
 
-.post p {
-   font-size: 1rem;
-   margin: 0 15%;
-   line-height: 145%;
-   font-family:'SUIT-Regular';
-}
 
-.post img {
-   margin: -7%;
-   width: 47%;
-}
+
+
+
 
 
 
@@ -888,7 +1194,7 @@ img[alt="CAKE"] {
    cursor: none;
 }
 
-s .zoom-container img {
+.zoom-container img {
    width: 100%;
    display: block;
 }
@@ -946,15 +1252,10 @@ img[alt="Nongsanisholdingstrawberries"] {
 
 
 footer p {
-   color: #858484;
+   color: #858484;  font-family: 'PurenJeonnam';
 }
 
-.footerul {
-   display: flex;
-   justify-items: flex-end;
-   justify-content: space-evenly;
-   margin: 3% 30%;
-}
+
 
 /* animation */
 @keyframes carMove {

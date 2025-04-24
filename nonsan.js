@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       lens.style.display = 'none';
    });
 });
-
+// 스크롤
 $(function () {
 
    var menuItems = $("nav ul li").not(":first-child");
@@ -83,4 +83,19 @@ $(function () {
          }
       });
    });
+
+   // 모바일 슬라이드토글
+   if (window.matchMedia("(max-width: 800px)").matches) {
+      $(".menu>li").click(function () {
+         $(".sub").slideUp()
+         $(this).find(".sub").stop().slideToggle();
+      })
+   } 
+// 포스트잇 토글
+if (window.matchMedia("(max-width: 800px)").matches) {
+   $(".post h3").click(function () {
+      $(".post p,.post div").slideUp()
+      $(this).siblings(" p,div").stop().slideToggle();
+   })
+} 
 });
