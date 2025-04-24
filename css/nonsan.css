@@ -40,6 +40,7 @@ section:not(:first-child){  height: 140vw;}
       width: 70%;
       height: 76%;
    }
+   #s1 .content{ width: 90%;}
    /* 헤더 */
    .hamburger {
       width: 50%;
@@ -56,7 +57,22 @@ section:not(:first-child){  height: 140vw;}
       .menuboard a{font-size: 50% ; font-family: 'PurenJeonnam';}
       .menuboard span{display: block;
          font-size: 400%;}
-
+         img[alt="logo"] {
+            width: 50%;
+            position: absolute;
+            top: 11%;
+            left: 24%;
+       
+        }
+        #s1>img:nth-of-type(2) {
+         position: absolute;
+         width: 47%;
+         top: 17%;
+         right: -14%;
+         z-index: -4;
+     }
+      
+    
 /* 올메뉴 */
 .SearchBtn {display: none;}
 #search1 {
@@ -104,15 +120,16 @@ color: #eeb6b6;
       
      }
      #stagebox {
-      width: 65%;
-      height: 13%;
+      width: 64.1%;
+      height: 23%;
       background-color: aqua;
       position: absolute;
       bottom: 5px;
-      top: 51%;
+      top: 52%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
+
       /* 프로그램 */
       #program>div {
          width: 60%;
@@ -312,6 +329,22 @@ footer {
    .menuboard a{font-size: 100%}
    .menuboard span{display: block;
       font-size: 200%;}
+      img[alt="logo"] {
+         width: 40%;
+         position: absolute;
+         top: 10%;
+         left: 5%;
+         transform: rotate(-20deg);
+         z-index: 5;
+      }
+      #s1>img:nth-of-type(2) {
+         position: absolute;
+         width: 40%;
+         top: -8%;
+         right: -5%;
+         z-index: -4;
+      }
+      
    /* 올메뉴 */
    #search1 {
    
@@ -552,6 +585,21 @@ footer {
    }
    .menuboard a{font-size: 100%}
    .menuboard span{vertical-align: middle; margin: 0 5px 0 0;}
+   img[alt="logo"] {
+      width: 40%;
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      transform: rotate(-20deg);
+      z-index: 5;
+   }
+   #s1>img:nth-of-type(2) {
+      position: absolute;
+      width: 40%;
+      top: -8%;
+      right: -5%;
+      z-index: -4;
+   }
    
    /* 올메뉴 */
    #search1 {
@@ -884,13 +932,7 @@ ul a{color: rgb(255, 255, 255);}
    position: relative;
 }
 
-img[alt="logo"] {
-   width: 40%;
-   position: absolute;
-   top: 10%;
-   left: 5%;
-   transform: rotate(-20deg);
-}
+
 
 #s1>div:nth-child(1) {
    background-image: url(../img/stage1.png);
@@ -922,13 +964,7 @@ img[alt="berry"] {
 }
 
 /* #stagebox img:nth-child(4) { */
-#s1>img:nth-of-type(2) {
-   position: absolute;
-   width: 40%;
-   top: -8%;
-   right: -5%;
-   z-index: -4;
-}
+
 
 #video {
    width: 100%;
