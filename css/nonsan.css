@@ -208,8 +208,8 @@ color: #eeb6b6;
   }
   img[alt="berrycar"] {
    position: absolute;
-   width: 30%;
-   top: 5%;
+   width: 35%;
+   top: -3%;
    right: -25%;
    opacity: 0;
    animation: carMove 7s ease-in-out infinite;
@@ -281,6 +281,38 @@ color: #eeb6b6;
    background-image: url(../img/frame2.png);
 }
 
+#s5>img:nth-of-type(1) {
+   width: 15%;
+   top: 4%;
+   right: 8%
+}
+
+#s5>img:nth-of-type(2) {
+   width: 14%;
+   top: 8%;
+   left: 2%;
+}
+
+#s5>img:nth-of-type(3) {
+   width: 19%;
+   bottom: 2%;
+   left: 3%;
+}
+
+#s5>img:nth-of-type(4) {
+   width: 11%;
+   bottom: 43%;
+   right: 5%;
+   z-index: 4;
+}
+
+img[alt="CAKE"] {
+   width: 32%;
+   bottom: 6%;
+   right: 1%;
+   position: absolute;
+}
+
   #notice {
    display: flex;
 flex-direction: column;
@@ -310,7 +342,7 @@ align-items: center;
    width: 50%;
 }
 .post h3 {
-   font-size: 0.9rem;
+   font-size: 0.8rem;
    padding: 12% 0 8% 0;
    font-family: 'KIMM_Bold';
 }
@@ -336,7 +368,32 @@ footer {
    font-size: 0.8em;
 }
 .footerul li {margin: 5%}
+img[alt="stone3"] {
+   position: absolute;
+   bottom: 7%;
+   width: 15%;
+   left: 4%;
+}
 
+img[alt="sprouts1"] {
+   position: absolute;
+   top: 2%;
+   right: 15%;
+   width: 40%;
+}
+
+img[alt="treeandflowers"] {
+   position: absolute;
+   bottom: 30%;
+   width: 40%;
+   right: -15%;
+}
+
+img[alt="Nongsanisholdingstrawberries"] {
+   position: absolute;
+   width: 37%;
+   top: -3%;
+}
 
 }
 
@@ -586,6 +643,38 @@ footer {
       background-image: url(../img/frame-with-leaves-beside.png);
    }
    
+#s5>img:nth-of-type(1) {
+   width: 10%;
+   top: 8%;
+   right: 15%
+}
+
+#s5>img:nth-of-type(2) {
+   width: 7%;
+   top: 10%;
+   left: 10%;
+}
+
+#s5>img:nth-of-type(3) {
+   width: 9%;
+   bottom: -2%;
+   left: 8%;
+}
+
+#s5>img:nth-of-type(4) {
+   width: 8%;
+   bottom: 30%;
+   right: -1%;
+   z-index: -4;
+}
+
+img[alt="CAKE"] {
+   width: 21%;
+   bottom: 3%;
+   right: 10%;
+   position: absolute;
+}
+
    #notice {
       display: flex;
       flex-wrap: wrap;
@@ -630,6 +719,32 @@ footer {
       justify-items: flex-end;
       justify-content: space-evenly;
 
+   }
+   img[alt="stone3"] {
+      position: absolute;
+      bottom: -10%;
+      width: 15%;
+      left: 11%;
+   }
+   
+   img[alt="sprouts1"] {
+      position: absolute;
+      top: -7%;
+      left: 18%;
+      width: 28%;
+   }
+   
+   img[alt="treeandflowers"] {
+      position: absolute;
+      bottom: -5%;
+      width: 25%;
+      right: 0%;
+   }
+   
+   img[alt="Nongsanisholdingstrawberries"] {
+      position: absolute;
+      width: 25%;
+      top: 5%;
    }
 }
 
@@ -884,6 +999,39 @@ footer {
       background-image: url(../img/frame-with-leaves-beside.png);
    }
    
+#s5>img:nth-of-type(1) {
+   width: 10%;
+   top: 8%;
+   right: 15%
+}
+
+#s5>img:nth-of-type(2) {
+   width: 7%;
+   top: 10%;
+   left: 10%;
+}
+
+#s5>img:nth-of-type(3) {
+   width: 9%;
+   bottom: -2%;
+   left: 8%;
+}
+
+#s5>img:nth-of-type(4) {
+   width: 8%;
+   bottom: 30%;
+   right: -1%;
+   z-index: -4;
+}
+
+img[alt="CAKE"] {
+   width: 21%;
+   bottom: 3%;
+   right: 10%;
+   position: absolute;
+}
+
+   
      #notice {
       display: flex;
       flex-wrap: wrap;
@@ -928,6 +1076,32 @@ footer {
       justify-content: space-evenly;
      
    }
+   img[alt="stone3"] {
+      position: absolute;
+      bottom: -10%;
+      width: 15%;
+      left: 11%;
+   }
+   
+   img[alt="sprouts1"] {
+      position: absolute;
+      top: -7%;
+      left: 18%;
+      width: 28%;
+   }
+   
+   img[alt="treeandflowers"] {
+      position: absolute;
+      bottom: -5%;
+      width: 25%;
+      right: 0%;
+   }
+   
+   img[alt="Nongsanisholdingstrawberries"] {
+      position: absolute;
+      width: 25%;
+      top: 5%;
+   }
 }
 
 p,
@@ -948,7 +1122,7 @@ body {
    background-size: contain;
    background-position: center;
 }
-*:not(#s1 .content){  background-position: center;}
+
 a {
    text-decoration: none;
    color: #666;
@@ -1146,16 +1320,6 @@ html {
    position: relative;
 }
 
-img[alt="berrycar"] {
-   position: absolute;
-   width: 20%;
-   bottom: 5%;
-   right: -25%;
-   opacity: 0;
-   animation: carMove 7s ease-in-out infinite;
-}
-
-
 
 #course h2 {
    padding: 0%;
@@ -1255,38 +1419,6 @@ h2:hover {
    position: absolute;
 }
 
-#s5>img:nth-of-type(1) {
-   width: 10%;
-   top: 8%;
-   right: 15%
-}
-
-#s5>img:nth-of-type(2) {
-   width: 7%;
-   top: 10%;
-   left: 10%;
-}
-
-#s5>img:nth-of-type(3) {
-   width: 9%;
-   bottom: -2%;
-   left: 8%;
-}
-
-#s5>img:nth-of-type(4) {
-   width: 8%;
-   bottom: 30%;
-   right: -1%;
-   z-index: -4;
-}
-
-img[alt="CAKE"] {
-   width: 21%;
-   bottom: 3%;
-   right: 10%;
-   position: absolute;
-}
-
 #notice {
    background-size: cover;
 
@@ -1349,32 +1481,7 @@ img[alt="CAKE"] {
 
 }
 
-img[alt="stone3"] {
-   position: absolute;
-   bottom: -10%;
-   width: 15%;
-   left: 11%;
-}
 
-img[alt="sprouts1"] {
-   position: absolute;
-   top: -7%;
-   left: 18%;
-   width: 28%;
-}
-
-img[alt="treeandflowers"] {
-   position: absolute;
-   bottom: -5%;
-   width: 25%;
-   right: 0%;
-}
-
-img[alt="Nongsanisholdingstrawberries"] {
-   position: absolute;
-   width: 25%;
-   top: 5%;
-}
 
 /* footer */
 
