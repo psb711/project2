@@ -34,11 +34,11 @@
 
    }
  
-section:not(:first-child){  height: 140vw;}
+section:not(:first-child){  height: 200vw;}
    .content {
       margin: 0 auto;
       width: 70%;
-      height: 76%;
+      height: 80%;
    }
    #s1 .content{ width: 90%;}
    /* 헤더 */
@@ -58,16 +58,16 @@ section:not(:first-child){  height: 140vw;}
       .menuboard span{display: block;
          font-size: 400%;}
          img[alt="logo"] {
-            width: 50%;
+            width: 75%;
             position: absolute;
-            top: 11%;
-            left: 24%;
+            top: 16%;
+            left: 12%;
        
         }
         #s1>img:nth-of-type(2) {
          position: absolute;
-         width: 47%;
-         top: 17%;
+         width: 51%;
+         top: 25%;
          right: -14%;
          z-index: -4;
      }
@@ -115,7 +115,7 @@ color: #eeb6b6;
    
       #s1 {
   
-         margin-bottom: -31%;
+         margin-bottom: -55%;
 
       
      }
@@ -131,6 +131,14 @@ color: #eeb6b6;
   }
 
       /* 프로그램 */
+      #s2>div:nth-child(1) {
+         background-image: url(../img/picnic.png);
+         display: flex;
+         flex-wrap: wrap;
+         align-content: space-evenly;
+         justify-content: space-evenly;
+      }
+      
       #program>div {
          width: 60%;
          margin: -8%;
@@ -149,11 +157,27 @@ color: #eeb6b6;
       img[alt="Nonsansayinghello"] {
          position: absolute;
          width: 24%;
-         bottom: 4%;
-         left: 3%;
+         top: -3%;
+         left: 36%;
       }
+      img[alt="stone"] {
+         position: absolute;
+         width: 21%;
+         bottom: 8%;
+         right: 5%;
+      }
+      
 
       /* 코스 */
+      #s3>div:nth-child(1) {
+         background-image: url(../img/Layer3.png);
+         display: flex;
+       
+         justify-content: center;
+         text-align: center;
+      
+      }
+      
       #course {
          display: flex;
          justify-content: space-between;
@@ -172,7 +196,7 @@ color: #eeb6b6;
       font-size: 0.8em;
       width: 100%;
       position: absolute;
-      top: 60px;
+      top: 39%;
       left: 0;
    opacity: 0;
       color: rgb(0, 0, 0);
@@ -182,15 +206,29 @@ color: #eeb6b6;
       line-height: 25px;
    
   }
+  img[alt="berrycar"] {
+   position: absolute;
+   width: 30%;
+   top: 5%;
+   right: -25%;
+   opacity: 0;
+   animation: carMove 7s ease-in-out infinite;
+}
+#course h2 {
+
+   background: aliceblue;
+   opacity: 0.7;
+   border-radius: 80%;
+}
       
       /* 체험 */
       #experience p {
-         font-size: 1em;
+         font-size: 1.2em;
          padding: 5% 0;
       }
       #experience img {
-         width: 32%;
-         padding: 7% 0;
+         width: 50%;
+         padding: 10% 0;
       
       }
       #s4>div:nth-child(1) {
@@ -201,44 +239,48 @@ color: #eeb6b6;
          justify-content: center;
      }
       img[alt="Non-sandrinkingjuice"] {
-         width: 26%;
+         width: 35%;
          position: absolute;
-         bottom: -6%;
-         left: -1%;
+         bottom: 2%;
+         left: 0%;
          z-index: 20;
       }
       
       img[alt="flower1"] {
          position: absolute;
-         bottom: 5%;
-         width: 20%;
-         right: 12%;
+         bottom: 8.5%;
+         width: 30%;
+         right: 7%;
       }
       
       img[alt="tree1"] {
          position: absolute;
-         top: -48%;
-         width: 40%;
-         left: -20%;
+         top: -22%;
+         width: 48%;
+         left: -10%;
       }
       
       img[alt="stone1"] {
          position: absolute;
-         top: 1%;
-         width: 20%;
-         left: -5%;
+         top: 5%;
+         width: 24%;
+         left: 4%;
          z-index: 15;
       }
       
       img[alt="stone2"] {
          position: absolute;
-         bottom: 7%;
-         width: 10%;
-         right: 8%;
+         bottom: 10%;
+         width: 15%;
+         right: 4%;
       }
       
       
   /* 공지 */
+  #s5>div:nth-child(1) {
+   background-image: url(../img/frame2.png);
+}
+
   #notice {
    display: flex;
 flex-direction: column;
@@ -249,7 +291,7 @@ align-items: center;
 }
 
 .post {
-   width: 250px;
+   width: 55%;
 
    background-image: url(../img/Postit1.png);
 
@@ -281,7 +323,7 @@ align-items: center;
 .post div{margin-bottom: 5%;}
 .post p,.post div{display: none;}
 /* 지도 */
-#s6{margin-bottom: -15%;}
+#s6{margin-bottom: -70%;}
 /* 푸터 */
 
 footer {
@@ -394,6 +436,14 @@ footer {
       
    }
       /* 프로그램 */
+      #s2>div:nth-child(1) {
+         background-image: url(../img/Untitled-1.jpg);
+         display: flex;
+         flex-wrap: wrap;
+         align-content: space-evenly;
+         justify-content: space-evenly;
+      }
+      
    #program>div {
       width: 29%;
       margin: -1%;
@@ -414,7 +464,22 @@ footer {
       bottom: 4%;
       left: -3%;
    }
+   img[alt="stone"] {
+      position: absolute;
+      width: 17%;
+      bottom: 10%;
+      right: 5%;
+   }
    /* 코스 */
+   #s3>div:nth-child(1) {
+      background-image: url(../img/Layer2.png);
+      display: flex;
+    
+      justify-content: center;
+      text-align: center;
+   
+   }
+   
    #course {
       display: flex;
       justify-content: space-between;
@@ -454,6 +519,15 @@ footer {
       line-height: 25px;
       padding: 4px;
    }
+   img[alt="berrycar"] {
+      position: absolute;
+      width: 20%;
+      bottom: 5%;
+      right: -25%;
+      opacity: 0;
+      animation: carMove 7s ease-in-out infinite;
+   }
+   
    /* 체험 */
    #s4>div:nth-child(1) {
      
@@ -508,6 +582,10 @@ footer {
       right: 6%;
    }
    /* 공지 */
+   #s5>div:nth-child(1) {
+      background-image: url(../img/frame-with-leaves-beside.png);
+   }
+   
    #notice {
       display: flex;
       flex-wrap: wrap;
@@ -642,6 +720,14 @@ footer {
       
    }
    /* 프로그램 */
+   #s2>div:nth-child(1) {
+      background-image: url(../img/Untitled-1.jpg);
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-evenly;
+      justify-content: space-evenly;
+   }
+   
    #program>div {
       width: 29%;
       margin: -1%;
@@ -671,7 +757,22 @@ footer {
       bottom: 4%;
       left: 3%;
    }
+   img[alt="stone"] {
+      position: absolute;
+      width: 17%;
+      bottom: 10%;
+      right: 5%;
+   }
    /* 코스 */
+   #s3>div:nth-child(1) {
+      background-image: url(../img/Layer2.png);
+      display: flex;
+    
+      justify-content: center;
+      text-align: center;
+   
+   }
+   
    #course {
       display: flex;
       justify-content: space-between;
@@ -710,6 +811,15 @@ footer {
       line-height: 25px;
       padding: 4px;
    }
+   img[alt="berrycar"] {
+      position: absolute;
+      width: 20%;
+      bottom: 5%;
+      right: -25%;
+      opacity: 0;
+      animation: carMove 7s ease-in-out infinite;
+   }
+   
    /* 체험 */
    #s4>div:nth-child(1) {
       
@@ -770,6 +880,10 @@ footer {
       right: 0%;
    }
      /* 공지 */
+     #s5>div:nth-child(1) {
+      background-image: url(../img/frame-with-leaves-beside.png);
+   }
+   
      #notice {
       display: flex;
       flex-wrap: wrap;
@@ -963,7 +1077,7 @@ img[alt="berry"] {
    right: -2%;
 }
 
-/* #stagebox img:nth-child(4) { */
+
 
 
 #video {
@@ -980,12 +1094,7 @@ img[alt="berry"] {
 #s2 {
    position: relative;
 }
-img[alt="stone"] {
-   position: absolute;
-   width: 17%;
-   bottom: 10%;
-   right: 5%;
-}
+
 
 
 
@@ -1006,13 +1115,7 @@ img[alt="sprouts"] {
 }
 
 
-#s2>div:nth-child(1) {
-   background-image: url(../img/Untitled-1.jpg);
-   display: flex;
-   flex-wrap: wrap;
-   align-content: space-evenly;
-   justify-content: space-evenly;
-}
+
 
 #program>div {
  
@@ -1052,14 +1155,6 @@ img[alt="berrycar"] {
    animation: carMove 7s ease-in-out infinite;
 }
 
-#s3>div:nth-child(1) {
-   background-image: url(../img/Layer2.png);
-   display: flex;
- 
-   justify-content: center;
-   text-align: center;
-
-}
 
 
 #course h2 {
@@ -1207,9 +1302,6 @@ img[alt="CAKE"] {
 
 
 
-#s5>div:nth-child(1) {
-   background-image: url(../img/frame-with-leaves-beside.png);
-}
 
 /* map */
 #s6 {
