@@ -92,25 +92,26 @@ section:not(:first-child){  height: 200vw;}
 
 
 .menu>li {
-   width: 35%;
+   width: 50%;
 
    line-height: 25px;
 padding: 5% 0;
 
 }
-.menu > li::after {
-   content: '▾'; /* 혹은 ▼, ⌄ 등 */
-   font-size: 30px;
-   margin-bottom: 100px;
+.menu>li>a::after {
+   content: '▾';
+   font-size: 32px;
+vertical-align: middle;
 color: #eeb6b6;
  }
 
 .menu>li>a {
    font-size: 1.4em;
    width: 100%;
-   padding: 0 0px;
+   padding: 0 -2px;
 }
-.sub{display: none;}
+.sub{display: none;
+margin-right: 11%;}
       /* 스테이지 */
    
       #s1 {
@@ -122,13 +123,19 @@ color: #eeb6b6;
      #stagebox {
       width: 64.1%;
       height: 23%;
-      background-color: aqua;
+    
       position: absolute;
       bottom: 5px;
       top: 52%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
+  #close>button>img {
+   width: 13%;
+   float: right;
+   margin-right: 0%;
+   margin-top: 0%;
+}
 
       /* 프로그램 */
       #s2>div:nth-child(1) {
@@ -156,15 +163,21 @@ color: #eeb6b6;
       
       img[alt="Nonsansayinghello"] {
          position: absolute;
-         width: 24%;
-         top: -3%;
-         left: 36%;
+         width: 29%;
+         top: -5%;
+         left: 45.3%;
       }
       img[alt="stone"] {
          position: absolute;
          width: 21%;
          bottom: 8%;
          right: 5%;
+      }
+      img[alt="programsign"] {
+         position: absolute;
+         width: 25%;
+         top: 3.7%;
+        left: 23%;
       }
       
 
@@ -193,10 +206,10 @@ color: #eeb6b6;
          padding: 1%;
      }
      .txtbox1 {
-      font-size: 0.8em;
+      font-size: 0.7rem;
       width: 100%;
       position: absolute;
-      top: 39%;
+      top: 31%;
       left: 0;
    opacity: 0;
       color: rgb(0, 0, 0);
@@ -213,6 +226,12 @@ color: #eeb6b6;
    right: -25%;
    opacity: 0;
    animation: carMove 7s ease-in-out infinite;
+}
+img[alt="coursesign"] {
+   position: absolute;
+   top: 7%;
+   width: 32%;
+   right: 12%;
 }
 #course h2 {
 
@@ -241,7 +260,7 @@ color: #eeb6b6;
       img[alt="Non-sandrinkingjuice"] {
          width: 35%;
          position: absolute;
-         bottom: 2%;
+         bottom: -5%;
          left: 0%;
          z-index: 20;
       }
@@ -274,6 +293,12 @@ color: #eeb6b6;
          width: 15%;
          right: 4%;
       }
+      img[alt="experiencesign"] {
+         position: absolute;
+         top: 4%;
+         width: 33%;
+         left: 62%;
+     }
       
       
   /* 공지 */
@@ -281,25 +306,26 @@ color: #eeb6b6;
    background-image: url(../img/frame2.png);
 }
 
-#s5>img:nth-of-type(1) {
-   width: 15%;
-   top: 4%;
-   right: 8%
-}
 
-#s5>img:nth-of-type(2) {
+   .balloonbox:nth-of-type(2) {width: 15%;
+   top: 4%;
+   right: 8%}
+   
+
+
+   .balloonbox:nth-of-type(3) {
    width: 14%;
    top: 8%;
    left: 2%;
 }
 
-#s5>img:nth-of-type(3) {
+.balloonbox:nth-of-type(4) {
    width: 19%;
    bottom: 2%;
    left: 3%;
 }
 
-#s5>img:nth-of-type(4) {
+.balloonbox:nth-of-type(5) {
    width: 11%;
    bottom: 43%;
    right: 5%;
@@ -311,6 +337,12 @@ img[alt="CAKE"] {
    bottom: 6%;
    right: 1%;
    position: absolute;
+}
+img[alt="noticesign"] {
+   position: absolute;
+   top: 15.5%;
+   width: 33%;
+   left: 33%;
 }
 
   #notice {
@@ -333,8 +365,9 @@ align-items: center;
         
           background-position: top;
   
-          background-size: 105% auto;
-      }
+          background-size: 106% 107%;
+      
+          box-shadow: 0 12px 17px rgba(0, 0, 0, 0.3)  }
 
 
 .post img {
@@ -342,18 +375,20 @@ align-items: center;
    width: 50%;
 }
 .post h3 {
-   font-size: 0.8rem;
-   padding: 12% 0 8% 0;
+   font-size: 0.7rem;
+   padding: 12% 0 15% 0;
    font-family: 'KIMM_Bold';
 }
 .post p {
-   font-size: 0.9rem;
-   margin: 0 0 14% 0%;
+   font-size: 0.8rem;
+   margin: 0% 0 14% 0%;
    line-height: 145%;
    font-family:'SUIT-Regular';
 }
 .post div{margin-bottom: 5%;}
 .post p,.post div{display: none;}
+.post:nth-of-type(1) p{display: block;}
+.post:hover{cursor: pointer;}
 /* 지도 */
 #s6{margin-bottom: -70%;}
 /* 푸터 */
@@ -377,9 +412,9 @@ img[alt="stone3"] {
 
 img[alt="sprouts1"] {
    position: absolute;
-   top: 2%;
-   right: 15%;
-   width: 40%;
+   top: 10%;
+   left: 52%;
+   width: 29%;
 }
 
 img[alt="treeandflowers"] {
@@ -393,6 +428,13 @@ img[alt="Nongsanisholdingstrawberries"] {
    position: absolute;
    width: 37%;
    top: -3%;
+}
+img[alt="mapsign"] {
+   position: absolute;
+   top: 5%;
+   width: 29%;
+   left: 53%;
+   z-index: -4;
 }
 
 }
@@ -478,12 +520,18 @@ img[alt="Nongsanisholdingstrawberries"] {
    #allmenuhead {
       margin: 10%;
    }
+   #close>button>img {
+      width: 7%;
+      float: right;
+      margin-right: 0%;
+      margin-top: 0%;
+  }
    .sub{display: block;}
    /* 스테이지 */
    #stagebox {
       width: 65%;
       height: 36%;
-      background-color: aqua;
+    
       position: absolute;
       bottom: 5px;
       top: 53%;
@@ -527,6 +575,12 @@ img[alt="Nongsanisholdingstrawberries"] {
       bottom: 10%;
       right: 5%;
    }
+   img[alt="programsign"] {
+      position: absolute;
+      width: 22%;
+      top: -5%;
+      right: 12%;
+  }
    /* 코스 */
    #s3>div:nth-child(1) {
       background-image: url(../img/Layer2.png);
@@ -547,7 +601,7 @@ img[alt="Nongsanisholdingstrawberries"] {
    }
    #course>div {
    
-      margin-top: 13%;
+      margin-top: 19%;
    }
    #s3>div:nth-child(1) {align-items: flex-start;
    }
@@ -563,10 +617,10 @@ img[alt="Nongsanisholdingstrawberries"] {
    }
    
    .txtbox1 {
-      font-size: 1rem;
+      font-size: 0.9rem;
       width: 100%;
       position: absolute;
-      top: 90px;
+      top: 28%;
       left: 0;
       opacity: 0;
       color: rgb(0, 0, 0);
@@ -584,7 +638,12 @@ img[alt="Nongsanisholdingstrawberries"] {
       opacity: 0;
       animation: carMove 7s ease-in-out infinite;
    }
-   
+   img[alt="coursesign"] {
+      position: absolute;
+      width: 21%;
+      top: 1%;
+      left: 5%;
+  }
    /* 체험 */
    #s4>div:nth-child(1) {
      
@@ -638,30 +697,36 @@ img[alt="Nongsanisholdingstrawberries"] {
       width: 10%;
       right: 6%;
    }
+   img[alt="experiencesign"] {
+      position: absolute;
+      width: 20%;
+      top: -6%;
+      right: 12%;
+  }
    /* 공지 */
    #s5>div:nth-child(1) {
       background-image: url(../img/frame-with-leaves-beside.png);
    }
    
-#s5>img:nth-of-type(1) {
+   .balloonbox:nth-of-type(2) {
    width: 10%;
    top: 8%;
    right: 15%
 }
 
-#s5>img:nth-of-type(2) {
+.balloonbox:nth-of-type(3) {
    width: 7%;
    top: 10%;
    left: 10%;
 }
 
-#s5>img:nth-of-type(3) {
+.balloonbox:nth-of-type(4) {
    width: 9%;
    bottom: -2%;
    left: 8%;
 }
 
-#s5>img:nth-of-type(4) {
+.balloonbox:nth-of-type(5) {
    width: 8%;
    bottom: 30%;
    right: -1%;
@@ -674,21 +739,31 @@ img[alt="CAKE"] {
    right: 10%;
    position: absolute;
 }
-
+img[alt="noticesign"] {
+   position: absolute;
+   width: 17%;
+   top: -4%;
+   left: 12%;
+}
    #notice {
       display: flex;
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
+     
+         background-size: cover;
+      
+    
    }
    .post {
-      width: 40%;
-      height: 42%;
+      width: 30%;
+      height: 37.8%;
       background-image: url(../img/Postit.png);
       background-position: center;
       text-align: center;
-   
-   }
+      box-shadow: 0 12px 17px rgba(0, 0, 0, 0.3);
+      margin: 2%;
+  }
    .post img {
       margin: -7%;
       width: 47%;
@@ -700,7 +775,7 @@ img[alt="CAKE"] {
    }
    
    .post p {
-      font-size: 1rem;
+      font-size: 0.8rem;
       margin: 0px 5% 5% 4%;
       line-height: 145%;
       font-family:'SUIT-Regular';
@@ -712,13 +787,14 @@ img[alt="CAKE"] {
       text-align: center;
       height: 10vw;
       padding: 10%;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
+      margin-top: 15%;
    }
    .footerul {
       display: flex;
       justify-items: flex-end;
       justify-content: space-evenly;
-
+margin-bottom: 3%;
    }
    img[alt="stone3"] {
       position: absolute;
@@ -729,23 +805,30 @@ img[alt="CAKE"] {
    
    img[alt="sprouts1"] {
       position: absolute;
-      top: -7%;
-      left: 18%;
-      width: 28%;
-   }
+      top: 5%;
+      left: 19%;
+      width: 29%;
+  }
    
    img[alt="treeandflowers"] {
       position: absolute;
-      bottom: -5%;
-      width: 25%;
-      right: 0%;
+      bottom: -10%;
+      width: 18%;
+      right: -1%;
    }
    
    img[alt="Nongsanisholdingstrawberries"] {
       position: absolute;
       width: 25%;
       top: 5%;
+      left: -2%;
    }
+   img[alt="mapsign"] {
+      position: absolute;
+      width: 22%;
+      top: -0.7%;
+      right: 14%;
+  }
 }
 
 @media (min-width:1361px) {
@@ -766,7 +849,7 @@ img[alt="CAKE"] {
       width: 45%;
    }
    header {
-      width: 8%;
+      width: 9%;
       height: 100vh;
      
       top: 0%;
@@ -774,8 +857,9 @@ img[alt="CAKE"] {
       position: fixed;
    }
    nav li {
-      margin: 20% 10%; ;
-   }
+      margin: 20% 10%;
+      text-align: center;
+  }
    .menuboard a{font-size: 100%}
    .menuboard span{vertical-align: middle; margin: 0 5px 0 0;}
    img[alt="logo"] {
@@ -821,11 +905,17 @@ img[alt="CAKE"] {
      
    }
    .sub{display: block;}
+   #close>button>img {
+      width: 7%;
+      float: right;
+      margin-right: 0%;
+      margin-top: 0%;
+  }
    /* 스테이지 */
    #stagebox {
       width: 65%;
       height: 36%;
-      background-color: aqua;
+
       position: absolute;
       bottom: 5px;
       top: 53%;
@@ -878,6 +968,12 @@ img[alt="CAKE"] {
       bottom: 10%;
       right: 5%;
    }
+   img[alt="programsign"] {
+      position: absolute;
+      width: 17%;
+      top: 2%;
+      right: 14%;
+  }
    /* 코스 */
    #s3>div:nth-child(1) {
       background-image: url(../img/Layer2.png);
@@ -934,6 +1030,12 @@ img[alt="CAKE"] {
       opacity: 0;
       animation: carMove 7s ease-in-out infinite;
    }
+   img[alt="coursesign"] {
+      position: absolute;
+      width: 19%;
+      top: 4%;
+      left: 12%;
+  }
    
    /* 체험 */
    #s4>div:nth-child(1) {
@@ -994,30 +1096,36 @@ img[alt="CAKE"] {
       width: 10%;
       right: 0%;
    }
+   img[alt="experiencesign"] {
+      position: absolute;
+      width: 19%;
+      top: 0%;
+      right: 11%;
+  }
      /* 공지 */
      #s5>div:nth-child(1) {
       background-image: url(../img/frame-with-leaves-beside.png);
    }
    
-#s5>img:nth-of-type(1) {
+   .balloonbox:nth-of-type(2) {
    width: 10%;
    top: 8%;
    right: 15%
 }
 
-#s5>img:nth-of-type(2) {
+.balloonbox:nth-of-type(3) {
    width: 7%;
    top: 10%;
    left: 10%;
 }
 
-#s5>img:nth-of-type(3) {
+.balloonbox:nth-of-type(4) {
    width: 9%;
    bottom: -2%;
    left: 8%;
 }
 
-#s5>img:nth-of-type(4) {
+.balloonbox:nth-of-type(5) {
    width: 8%;
    bottom: 30%;
    right: -1%;
@@ -1030,6 +1138,13 @@ img[alt="CAKE"] {
    right: 10%;
    position: absolute;
 }
+img[alt="noticesign"] {
+   position: absolute;
+   width: 18%;
+   top: 0%;
+   left: 12%;
+   z-index: -4;
+}
 
    
      #notice {
@@ -1037,14 +1152,18 @@ img[alt="CAKE"] {
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
+    
+         background-size: cover;
+    
    }
    .post {
-      width: 34%;
-      height: 41%;
+      width: 30%;
+      height: 42%;
       background-image: url(../img/Postit.png);
       background-position: center;
       text-align: center;
-   
+      box-shadow: 0 12px 17px rgba(0, 0, 0, 0.3);
+      margin: 2%;
    }
    .post img {
       margin: -7%;
@@ -1056,25 +1175,33 @@ img[alt="CAKE"] {
       font-family: 'KIMM_Bold';
    }
    .post p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       margin: 0 0%;
       line-height: 145%;
       font-family:'SUIT-Regular';
    }
    .post p,.post div{display: block;}
+   /* 지도 */
+   img[alt="sprouts1"] {
+      position: absolute;
+      top: 7%;
+      left: 24%;
+      width: 28%;
+  }
    /* 푸터 */
    footer {
       width: 100%;
       text-align: center;
       height: 10vw;
       padding: 10%;
-      margin-bottom: 10%;
+      margin-bottom: 5%;
+      margin-top: 15%;
    }
    .footerul {
       display: flex;
       justify-items: flex-end;
       justify-content: space-evenly;
-     
+      margin-bottom: 3%;
    }
    img[alt="stone3"] {
       position: absolute;
@@ -1083,17 +1210,12 @@ img[alt="CAKE"] {
       left: 11%;
    }
    
-   img[alt="sprouts1"] {
-      position: absolute;
-      top: -7%;
-      left: 18%;
-      width: 28%;
-   }
+  
    
    img[alt="treeandflowers"] {
       position: absolute;
       bottom: -5%;
-      width: 25%;
+      width: 20%;
       right: 0%;
    }
    
@@ -1102,7 +1224,13 @@ img[alt="CAKE"] {
       width: 25%;
       top: 5%;
    }
-}
+   img[alt="mapsign"] {
+      position: absolute;
+      width: 19%;
+      top: 4%;
+      right: 14%;
+      }
+   }
 
 p,
 h4,
@@ -1155,6 +1283,7 @@ header {
    backdrop-filter:blur(4px);
    z-index: 5;
 }
+.hamburger{cursor: pointer;}
 ul a{color: rgb(255, 255, 255);}
 
 
@@ -1180,18 +1309,13 @@ ul a{color: rgb(255, 255, 255);}
    margin-top: 5%;
 }
 
-#close button {
+#close button { cursor: pointer;
    width: 100%;
    border: none;
    background-color: transparent;
 }
 
-#close>button>img {
-   width: 7%;
-   float: right;
-   margin-right: 0%;
-   margin-top: 0%;
-}
+
 
 
 #search1 {
@@ -1415,20 +1539,27 @@ h2:hover {
    position: relative;
 }
 
-#s5>img {
+#s5>img, .balloonbox {
    position: absolute;
 }
 
-#notice {
-   background-size: cover;
-
-}
 
 
+ .balloonbox {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: all 0.8s ease-out;
+ }
+
+ .balloonbox.active {
+    opacity: 1;
+    transform: translateY(0);
+ }
+
+ .balloonbox img{width: 100%;}
 
 
-
-
+.balloon{animation: balloonmove 3s ease-in-out infinite;}
 
 
 
@@ -1537,4 +1668,22 @@ footer p {
    100% {
       transform: scale3d(1, 1, 1);
    }
+   
 }
+@keyframes balloonmove {
+   0% {
+     transform: translateY(0px) rotate(0deg);
+   }
+   25% {
+     transform: translateY(-10px) rotate(1deg);
+   }
+   50% {
+     transform: translateY(-15px) rotate(0deg);
+   }
+   75% {
+     transform: translateY(-10px) rotate(-1deg);
+   }
+   100% {
+     transform: translateY(0px) rotate(0deg);
+   }
+ }

@@ -63,14 +63,18 @@ $(function () {
    var sections = $("#s1,#s2, #s3, #s4, #s5, #s6");
 
    var gap = -80;
-   menuItems.click(function (e) {
-      e.preventDefault();
+   // menuItems.click(function (e) {
+   //    // e.preventDefault();
 
-      var index = $(this).index();
-      var sectionTop = sections.eq(index).offset().top - gap;
+   //    var index = $(this).index();
 
-      $("html, body").animate({ scrollTop: sectionTop }, 600);
-   });
+   //    // if(index==6){
+
+   //    // }
+   //    var sectionTop = sections.eq(index).offset().top - gap;
+
+   //    $("html, body").animate({ scrollTop: sectionTop }, 600);
+   // });
 
 
    $(window).scroll(function () {
@@ -98,4 +102,30 @@ if (window.matchMedia("(max-width: 800px)").matches) {
       $(this).siblings(" p,div").stop().slideToggle();
    })
 } 
+// 풍선
+
+window.addEventListener('scroll', function () {
+   if (window.innerWidth <= 2500) {
+     const imgs = document.getElementsByClassName('balloonbox');
+     const scrollY = window.scrollY;
+ 
+     const scrollThreshold = document.documentElement.scrollHeight * 0.7 - window.innerHeight;
+ 
+     for (let i = 0; i < imgs.length; i++) {
+       if (scrollY >= scrollThreshold) {
+         imgs[i].classList.add('active');
+       } else {
+         imgs[i].classList.remove('active');
+       }
+     }
+   }
+ });
+
+
+ 
+});
+document.addEventListener('DOMContentLoaded', function() {
+   if (window.innerWidth <= 799) {
+       document.getElementById('noticesp').src = './img/sign8.png';
+   }
 });
