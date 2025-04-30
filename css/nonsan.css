@@ -108,7 +108,7 @@ color: #eeb6b6;
 .menu>li>a {
    font-size: 1.4em;
    width: 100%;
-   padding: 0 -2px;
+   padding: 0 0px;
 }
 .sub{display: none;
 margin-right: 11%;}
@@ -232,6 +232,23 @@ img[alt="coursesign"] {
    top: 7%;
    width: 32%;
    right: 12%;
+}
+img[alt="load"] {
+   position: absolute;
+   top: 273px;
+   width: 35%;
+   right: -88px;
+   transform: rotate(-48deg);
+   z-index: -5;
+}
+img[alt="load1"] {
+   display: none;
+}
+img[alt="Trafficlight"] {
+   position: absolute;
+   top: 27%;
+   width: 7%;
+   left: 90%;
 }
 #course h2 {
 
@@ -644,6 +661,23 @@ img[alt="mapsign"] {
       top: 1%;
       left: 5%;
   }
+  img[alt="load"] {
+   position: absolute;
+   top: 273px;
+   width: 35%;
+   right: -97px;
+   transform: rotate(-56deg);
+   z-index: -5;
+}
+img[alt="load1"] {
+   display: none;
+}
+img[alt="Trafficlight"] {
+   position: absolute;
+   top: 18%;
+   width: 7%;
+   left: 6%;
+}
    /* 체험 */
    #s4>div:nth-child(1) {
      
@@ -1036,6 +1070,18 @@ margin-bottom: 3%;
       top: 4%;
       left: 12%;
   }
+  img[alt="load"] {
+   display: none;
+}
+img[alt="load1"] {
+   display: none;
+}
+img[alt="Trafficlight"] {
+   position: absolute;
+   top: 18%;
+   width: 7%;
+   left: 6%;
+}
    
    /* 체험 */
    #s4>div:nth-child(1) {
@@ -1592,17 +1638,21 @@ h2:hover {
 
 .zoom-lens {
    position: absolute;
-   width: 150px;
-   height: 150px;
+   width: 20%;
+   height: 21%;
    border-radius: 50%;
    border: 2px solid #333;
    overflow: hidden;
    pointer-events: none;
    display: none;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-   z-index: 10;
+   z-index: 15;
 }
+.zoomedImage{
 
+   width: 900%;
+   height: 900%;
+}
 .zoom-lens img {
    position: absolute;
    /* 실제 이미지보다 2배 확대 */
