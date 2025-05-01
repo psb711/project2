@@ -112,7 +112,15 @@ color: #eeb6b6;
 }
 .sub{display: none;
 margin-right: 11%;}
-      /* 스테이지 */
+  #close>button>img {
+   width: 13%;
+   float: right;
+   margin-right: 0%;
+   margin-top: 0%;
+}     
+
+
+/* 스테이지 */
    
       #s1 {
   
@@ -130,12 +138,7 @@ margin-right: 11%;}
       left: 50%;
       transform: translate(-50%, -50%);
   }
-  #close>button>img {
-   width: 13%;
-   float: right;
-   margin-right: 0%;
-   margin-top: 0%;
-}
+
 
       /* 프로그램 */
       #s2>div:nth-child(1) {
@@ -1074,13 +1077,22 @@ margin-bottom: 3%;
    display: none;
 }
 img[alt="load1"] {
-   display: none;
+   position: absolute;
+   bottom: -817px;
+   width: 5%;
+   right: 648px;
+   transform: rotate(-90deg);
+   z-index: -4;
 }
+
+ 
+
 img[alt="Trafficlight"] {
    position: absolute;
-   top: 18%;
-   width: 7%;
-   left: 6%;
+   bottom: 17%;
+   width: 6%;
+   right: 10%;
+   z-index: -3;
 }
    
    /* 체험 */

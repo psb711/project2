@@ -2,13 +2,13 @@
 
 $(function () {
 
-   $('.menu>li').mouseover(function () {
+   $('header .menu>li').mouseover(function () {
       $(".subbg").stop().slideDown("fast");
-      $('.sub').stop().slideDown();
+      $('header .sub').stop().slideDown();
 
    }).mouseout(function () {
       $(".subbg").stop().slideUp();
-      $('.sub').stop().slideUp("fast");
+      $('header .sub').stop().slideUp("fast");
 
    });
 
@@ -69,10 +69,13 @@ $(document).ready(function() {
 
    // body 클릭 시 #modal 숨기기
    $("body").click(function(event){
-       if (!$(event.target).closest("#modal").length && !$(event.target).is("#btn3")) {
-           $("#modal").fadeOut();
-       }
-   });
+    if (
+      (!$(event.target).closest("#modal").length || $(event.target).is("#btn5")) &&
+      !$(event.target).is("#btn3")
+    ) {
+      $("#modal").fadeOut();
+    }
+  });
 
    // #bt2 클릭 시 입력 값과 체크박스 확인 후 처리
    $("#bt2").click(function() {
@@ -101,4 +104,19 @@ $(document).ready(function() {
        }
    });
 
+   
 });
+$(function () {
+    $("#close").click(function () {
+       $("#allmenu").css("display", "none")
+    });
+    $("img[alt='hamburger']").click(function () {
+       $("#allmenu").css("display", "block")
+    });
+ 
+  if (window.matchMedia("(max-width: 799px)").matches) {
+    $("#allmenu .menu>li").click(function () {
+       $("#allmenu .sub").slideUp()
+       $(this).find(".sub").stop().slideToggle();
+    })}
+ });

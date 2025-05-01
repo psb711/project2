@@ -8,7 +8,7 @@ $(function () {
    $("img[alt='hamburger']").click(function () {
       $("#allmenu").css("display", "block")
    });
-   // 돋보기
+
 
 });
 document.addEventListener('DOMContentLoaded', function () {
