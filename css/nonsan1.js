@@ -83,7 +83,7 @@ $(document).ready(function() {
        let allChecked = true;
 
        // 모든 input 요소들이 채워졌는지 확인
-       $("#modal input[type='text']").each(function() {
+       $("#modal input[type='tesxt']").each(function() {
            if ($(this).val() === "") {
                allFilled = false;
            }
@@ -114,7 +114,7 @@ $(function () {
        $("#allmenu").css("display", "block")
     });
  
-  if (window.matchMedia("(max-width: 799px)").matches) {
+  if (window.matchMedia("(max-width: 850px)").matches) {
     $("#allmenu .menu>li").click(function () {
        $("#allmenu .sub").slideUp()
        $(this).find(".sub").stop().slideToggle();

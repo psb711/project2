@@ -825,7 +825,7 @@ img[alt="noticesign"] {
       height: 10vw;
       padding: 10%;
       margin-bottom: 5%;
-      margin-top: 15%;
+      margin-top: 7%;
    }
    .footerul {
       display: flex;
@@ -1078,9 +1078,9 @@ margin-bottom: 3%;
 }
 img[alt="load1"] {
    position: absolute;
-   bottom: -817px;
-   width: 5%;
-   right: 648px;
+   bottom: -90%;
+   width: 6%;
+   right: 29%;
    transform: rotate(-90deg);
    z-index: -4;
 }
@@ -1253,7 +1253,7 @@ img[alt="noticesign"] {
       height: 10vw;
       padding: 10%;
       margin-bottom: 5%;
-      margin-top: 15%;
+      margin-top: 7%;
    }
    .footerul {
       display: flex;
@@ -1680,7 +1680,7 @@ h2:hover {
 
 
 footer p {
-   color: #858484;  font-family: 'PurenJeonnam';
+   color:aliceblue;  font-family: none;
 }
 
 
